@@ -103,7 +103,7 @@
 					"  }",
 					"",
 					"  static ${1}? fromJson(String jsonStr) {",
-					"    return serializers.deserializeWith(${1}.serializer, jsonStr);",
+					"    return serializers.deserializeWith(${1}.serializer, json.decode(jsonStr));",
 					"  }",
 					"",
 					"  static Serializer<${1}> get serializer => _$${1/(^[A-z]{1})/${1:/downcase}/}Serializer;",
